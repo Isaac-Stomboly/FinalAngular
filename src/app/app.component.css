@@ -1,0 +1,5 @@
+nav {
+    background-color: seagreen;
+    z-index: 1;
+    position: sticky;
+}
