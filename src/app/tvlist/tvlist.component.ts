@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
+import { TVService } from './tvlist.service';
 
 @Component({
     selector: 'tv-list',
     templateUrl: './tvlist.component.html',
-    styleUrls: []
+    styleUrls: ['./tvlist.component.css']
 })
 
-export class TVList {}
+export class TVList {
+    shows: any[] = [];
+    imgUrl: string = "https://image.tmdb.org/t/p/w185";
+    constructor(private tvService: TVService) {
+        this.tvService.getTV().subscribe(tvShows => {
+            this.shows = tvShows;
+        })
+    }
+}
