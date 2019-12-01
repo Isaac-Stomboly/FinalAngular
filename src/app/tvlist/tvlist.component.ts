@@ -9,10 +9,14 @@ import { TVService } from './tvlist.service';
 
 export class TVList {
     shows: any[] = [];
+    listShows: any[] = [];
     imgUrl: string = "https://image.tmdb.org/t/p/w185";
     constructor(private tvService: TVService) {
         this.tvService.getTV().subscribe(tvShows => {
             this.shows = tvShows;
         })
+        for (let i = 0; i < this.shows.length; i++) {
+            console.log(this.shows[i]);
+        }
     }
 }
