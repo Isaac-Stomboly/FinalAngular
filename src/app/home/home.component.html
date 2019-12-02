@@ -1,4 +1,4 @@
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem;" [routerLink]="['/tv']">
     <div class="card-body">
         <img class="card-img-top" src="{{imgUrl + shows.results[0].poster_path}}" alt="{{shows.results[0].name}}">
         <h5 class="card-title">{{shows.results[0].name}}</h5>
@@ -9,7 +9,7 @@
 
 
 
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem;" [routerLink]="['/movies']">
     <div class="card-body">
         <img src="{{imgUrl + movies.results[0].poster_path}}" alt="{{movies.results[0].title}}">
         <h5 class="card-title">{{movies.results[0].title}}</h5>

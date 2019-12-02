@@ -1,7 +1,7 @@
-<div class="card" style="width: 18rem;">
+<div class="card" style="width: 18rem;" *ngFor="let movie of movies">
     <div class="card-body">
-        <img class="card-img-top" src="{{imgUrl + movies.results[0].poster_path}}" alt="{{movies.results[0].title}}">
-        <h5 class="card-title">{{movies.results[0].title}}</h5>
-        <p class="card-text">{{movies.results[0].overview}}</p>
+        <img class="card-img-top" src="{{imgUrl + movie.poster_path}}" alt="{{movie.title}}">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">{{movie.overview}}</p>
     </div>
 </div>
