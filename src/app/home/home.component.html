@@ -3,7 +3,7 @@
         <div class="card-body">
             <img class="card-img-top" src="{{imgUrl + shows[0].poster_path}}" alt="{{shows[0].name}}">
             <h5 class="card-title">{{shows[0].name}}</h5>
-            <p class="card-text">{{shows[0].overview}}</p>
+            <p class="card-text">Aired: {{shows[0].first_air_date}}<br>{{shows[0].overview}}</p>
         </div>
     </div>
 
@@ -14,7 +14,7 @@
         <div class="card-body">
             <img src="{{imgUrl + movies[0].poster_path}}" alt="{{movies[0].title}}">
             <h5 class="card-title">{{movies[0].title}}</h5>
-            <p class="card-text">{{movies[0].overview}}</p>
+            <p class="card-text">Released: {{movies[0].release_date}}<br>{{movies[0].overview}}</p>
         </div>
     </div>
 </div>
