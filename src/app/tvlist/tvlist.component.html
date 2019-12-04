@@ -1,7 +1,9 @@
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-        <img src="{{imgUrl + shows.results[0].poster_path}}" alt="" class="card-img-top">
-        <h5 class="card-title">{{shows.results[0].name}}</h5>
-        <p class="card-text">{{shows.results[0].overview}}</p>
+<div class="d-flex flex-wrap p-2 bd-highlight">
+    <div class="card" style="width: 18rem;" *ngFor="let show of shows">
+        <div class="card-body">
+            <img src="{{imgUrl + show.poster_path}}" alt="{{show.name}}" class="card-img-top">
+            <h5 class="card-title">{{show.name}}</h5>
+            <p class="card-text">{{show.overview}}</p>
+        </div>
     </div>
 </div>

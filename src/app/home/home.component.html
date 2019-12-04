@@ -1,18 +1,20 @@
-<div class="card" style="width: 18rem;" [routerLink]="['/tv']">
-    <div class="card-body">
-        <img class="card-img-top" src="{{imgUrl + shows.results[0].poster_path}}" alt="{{shows.results[0].name}}">
-        <h5 class="card-title">{{shows.results[0].name}}</h5>
-        <p class="card-text">{{shows.results[0].overview}}</p>
+<div class="d-flex flex-wrap p-2 bd-highlight">
+    <div class="card" style="width: 18rem;" [routerLink]="['/tv']">
+        <div class="card-body">
+            <img class="card-img-top" src="{{imgUrl + shows[0].poster_path}}" alt="{{shows[0].name}}">
+            <h5 class="card-title">{{shows[0].name}}</h5>
+            <p class="card-text">{{shows[0].overview}}</p>
+        </div>
     </div>
-</div>
 
 
 
 
-<div class="card" style="width: 18rem;" [routerLink]="['/movies']">
-    <div class="card-body">
-        <img src="{{imgUrl + movies.results[0].poster_path}}" alt="{{movies.results[0].title}}">
-        <h5 class="card-title">{{movies.results[0].title}}</h5>
-        <p class="card-text">{{movies.results[0].overview}}</p>
+    <div class="card" style="width: 18rem;" [routerLink]="['/movies']">
+        <div class="card-body">
+            <img src="{{imgUrl + movies[0].poster_path}}" alt="{{movies[0].title}}">
+            <h5 class="card-title">{{movies[0].title}}</h5>
+            <p class="card-text">{{movies[0].overview}}</p>
+        </div>
     </div>
 </div>
